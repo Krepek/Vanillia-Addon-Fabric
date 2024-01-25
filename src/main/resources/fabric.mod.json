@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanillia-addon",
+	"version": "${version}",
+	"name": "Vanillia Addon",
+	"description": "Small Changes to the vanilla game!",
+	"authors": [
+		"Krepek"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/vanillia-addon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.krepek.vanillaaddon.VanilliaAddon"
+		],
+		"Client": [
+			"net.krepek.vanillaaddon.VanilliaAddonClient"
+		],
+		"fabric-datagen": [
+			"net.krepek.vanillaaddon.VanilliaAddonDataGenerator"
+		]
+	},
+	"mixins": [
+		"vanillia-addon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

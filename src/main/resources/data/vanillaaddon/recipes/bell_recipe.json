@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    " G ",
+    "S S",
+    "T T"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:bell"
+  },
+  "show_notification": true
+}
